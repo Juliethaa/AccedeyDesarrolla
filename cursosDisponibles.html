@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cursos Disponibles - Accede y Desarrolla</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1800px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #8f803c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .job-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .job-card {
+            background-color: #f7f7f7;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .job-card h3 {
+            font-size: 1.5em;
+            color: #8f803c;
+            margin-bottom: 10px;
+        }
+
+        .job-card p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .job-card img {
+            width: 80px;
+            height: 80px;
+            margin: 10px 0;
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .nav-link {
+            font-size: 1.2em;
+            color: #e2c976;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .job-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .job-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cursos Disponibles</h1>
+        <div class="job-list">
+            <!-- Tarjeta de oferta laboral 1 -->
+            <div class="job-card">
+                <h3>Cargo: </h3>
+                <p>Descripción: </p>
+                <p>Requisitos: </p>
+                <img src="oferta1.png" alt="Icono de oferta 1">
+            </div>
+            <!-- Tarjeta de oferta laboral 2 -->
+            <div class="job-card">
+                <h3>Cargo:</h3>
+                <p>Descripción:</p>
+                <p>Requisitos: </p>
+                <img src="oferta2.png" alt="Icono de oferta 2">
+            </div>
+            <!-- Tarjeta de oferta laboral 3 -->
+            <div class="job-card">
+                <h3>Cargo: </h3>
+                <p>Descripción: </p>
+                <p>Requisitos: </p>
+                <img src="oferta3.png" alt="Icono de oferta 3">
+            </div>
+        </div>
+
+        <!-- Enlaces de navegación -->
+        <div class="navigation-links">
+            <a href="secciones.html" class="nav-link">Atrás</a>
+            <a href="pagina-principal.html" class="nav-link">Página Principal</a>
+        </div>
+    </div>
+</body>
+</html>
